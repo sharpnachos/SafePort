@@ -14,9 +14,7 @@
 
 **March 27, 2019**
 
-**Table of Contents**
-
-| **Table of Contents**         **2** |
+| **Table of Contents**         |
 | --- |
 | **Revision History**         **3** |
 | **1.**        **Introduction**        **4** |
@@ -79,6 +77,7 @@
   This document references the program ZenMap multiple times.  The application can be found here: [https://nmap.org/zenmap/](https://nmap.org/zenmap/)
 
 **2.** **Overall Description**
+
   **2.1** **Product Perspective**
 
   This product could best be described as the abridged version of the existing product _Zenmap_ (and others like it). _Port scanning_ tools are currently available, but they are only accessible to cybersecurity and software development professionals who already understand the subject. The amount of options available in these products is not necessary for the average person, and the _UI_ is far from user-friendly. We intend to make the process of network scanning much simpler.
@@ -89,7 +88,7 @@
     
     ➔Explain the concept of _port scanning_ and why it is necessary
     ➔Perform a _port scan_ on the device and determine if there are _ports_ at risk
-    ➔Return data regarding each _port&#39;s_ activity and status
+    ➔Return data regarding each _port's_ activity and status
     ➔Help the user secure their _ports_
 
   **2.3** **User Classes and Characteristics**
@@ -138,11 +137,11 @@
 
     4.1.1        Description and Priority
 
-      The program creates a _socket_ which sends a connection request to the _host&#39;s port_. If the _port_ is open and available for connections, it will respond to the request with an acknowledgement that is it open and ready to receive a connection. The scanner will return information on the _host&#39;s port_ status, as well as services, versions and operating systems being ran on that _port_.
+    The program creates a _socket_ which sends a connection request to the _host&#39;s port_. If the _port_ is open and available for connections, it will respond to the request with an acknowledgement that is it open and ready to receive a connection. The scanner will return information on the _host&#39;s port_ status, as well as services, versions and operating systems being ran on that _port_.
 
     4.1.2        Stimulus/Response Sequences
 
-      We will do as much as possible to minimize the user actions required to start the _port_ scan, since this is the main function of the product it will be easy to do, and the first thing to pop up.
+    We will do as much as possible to minimize the user actions required to start the _port_ scan, since this is the main function of the product it will be easy to do, and the first thing to pop up.
 
     4.1.3        Functional Requirements
 
@@ -158,11 +157,11 @@
 
     4.2.1 Description and Priority
 
-      The program creates a _socket_ which sends a connection request to a _host&#39;s ports_ determined by the _IP address_ inputted by the user. If the _port_ is open and available for connections, it will respond to the request with an acknowledgement that is it open and ready to receive a connection. The scanner will return information on the _host&#39;s port_ status, as well as services, versions and operating systems being ran on that _port._
+    The program creates a _socket_ which sends a connection request to a _host&#39;s ports_ determined by the _IP address_ inputted by the user. If the _port_ is open and available for connections, it will respond to the request with an acknowledgement that is it open and ready to receive a connection. The scanner will return information on the _host&#39;s port_ status, as well as services, versions and operating systems being ran on that _port._
 
     4.2.2 Stimulus/Response Sequences
 
-      We will create an advanced settings option in which the user can input an _IP address_ for a device they own and run the scan against that. This will only require an extra text box below the regular button
+    We will create an advanced settings option in which the user can input an _IP address_ for a device they own and run the scan against that. This will only require an extra text box below the regular button
 
     4.2.3 Functional Requirements
 
@@ -175,17 +174,18 @@
       REQ-4:        Provide specific information as to the safety concerns of each open _port_
 
 **5.** **Other Nonfunctional Requirements**
+
   **5.1** **Performance Requirements**
 
-    Scans need to take less than a minute and preferably less than 30 seconds. This should be pretty easy to achieve.
+  Scans need to take less than a minute and preferably less than 30 seconds. This should be pretty easy to achieve.
 
   **5.2** **Safety and Security Requirements**
 
-    There must be a disclaimer provided to inform the user that if they do not own the device they intend to scan they must have permission under penalty of law. We must assert that we are not liable for the misuse of our product.
+  There must be a disclaimer provided to inform the user that if they do not own the device they intend to scan they must have permission under penalty of law. We must assert that we are not liable for the misuse of our product.
 
   **5.3** **Software Quality Attributes**
 
-    This application will be accessible from a user interface after being installed on the user&#39;s computer.  Accessibility for inexperienced users is key for this project.  Reliability will of course be important as well since an improper port scan can lead to missed security vulnerabilities.  Additionally, maintainability will be essential for development in order to be able to properly update SafePort as any bugs arise.
+  This application will be accessible from a user interface after being installed on the user&#39;s computer.  Accessibility for inexperienced users is key for this project.  Reliability will of course be important as well since an improper port scan can lead to missed security vulnerabilities.  Additionally, maintainability will be essential for development in order to be able to properly update SafePort as any bugs arise.
 
 **Appendix A: Glossary**
 
