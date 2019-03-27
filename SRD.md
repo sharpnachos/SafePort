@@ -55,7 +55,8 @@
 |   |   |   |   |
 |   |   |   |   |
 
-1. **Introduction**
+**1.** **Introduction**
+
   **1.1** **Purpose**
 
   The purpose of SafePort is to provide an accessible way for the ordinary person to test the security of their own devices. The system will be a simplified version of a regular _port scanner_ like _Zenmap_ with a _GUI_ for easy user interaction. SafePort will then send _TCP connection requests_ to its own _ports_ (via the user&#39;s personal _IP address_) and then will determine whether the device is at risk and recommend a course of action to better protect the device.
@@ -116,6 +117,7 @@
   The main assumption we are making with this project is that _Python_ will have a robust enough _GUI_ implementation to create a good enough looking design for the interface of our product.  If this is not the case, then we will have to look into third-party components to meet expectations for the graphic design.
 
 **3.** **External Interface Requirements**
+
   **3.1** **User Interfaces**
 
   The SafePort application will open up to a home screen prompting the user to scan their network by clicking a button.  Once they click this, they will be led to the &#39;Scan&#39; page with the results of their scan.  All page links will be held by a navigation bar at the top of the application.  The &#39;Scan&#39; page will continue to hold the results of the most recent scan.  Once the results of the scan are displayed, the user will be prompted to fix any issues that the scan has found.  The &#39;Tools&#39; page will also have options for the user to scan or fix their network.  The &#39;Profile&#39; page will contain network information and logs from previous scans and fixes.  Finally, the &#39;Help&#39; page will contain a short tutorial for the user if they have any troubles navigating the program and an additional link to the user manual for further inquiries.  For visualization of these features, please see mockups displayed in Appendix B.
@@ -126,7 +128,7 @@
 
   **3.3** **Software Interfaces**
 
-  SafePort will be able to run on any operating system. All that is required is the latest version of _Python 3_ and its libraries_._
+  SafePort will be able to run on any operating system. All that is required is the latest version of _Python 3_ and its libraries.
 
   **1.4** **Communications Interfaces**
 
@@ -135,43 +137,43 @@
 **4.** **System Features**
   **4.1** **TCP Self Port Scan**
 
-    4.1.1        Description and Priority
+  4.1.1        Description and Priority
 
-    The program creates a _socket_ which sends a connection request to the _host&#39;s port_. If the _port_ is open and available for connections, it will respond to the request with an acknowledgement that is it open and ready to receive a connection. The scanner will return information on the _host&#39;s port_ status, as well as services, versions and operating systems being ran on that _port_.
+  The program creates a _socket_ which sends a connection request to the _host&#39;s port_. If the _port_ is open and available for connections, it will respond to the request with an acknowledgement that is it open and ready to receive a connection. The scanner will return information on the _host&#39;s port_ status, as well as services, versions and operating systems being ran on that _port_.
 
-    4.1.2        Stimulus/Response Sequences
+  4.1.2        Stimulus/Response Sequences
 
-    We will do as much as possible to minimize the user actions required to start the _port_ scan, since this is the main function of the product it will be easy to do, and the first thing to pop up.
+  We will do as much as possible to minimize the user actions required to start the _port_ scan, since this is the main function of the product it will be easy to do, and the first thing to pop up.
 
-    4.1.3        Functional Requirements
+  4.1.3        Functional Requirements
 
-      REQ-1:        Send _TCP requests_ to all _ports_
+    REQ-1:        Send _TCP requests_ to all _ports_
 
-      REQ-2:        Compile information on all _ports_ that don&#39;t respond with &quot;closed&quot;
+    REQ-2:        Compile information on all _ports_ that don&#39;t respond with &quot;closed&quot;
 
-      REQ-3:        Report findings to the user
+    REQ-3:        Report findings to the user
 
-      REQ-4:        Provide specific information as to the safety concerns of each open _port_
+    REQ-4:        Provide specific information as to the safety concerns of each open _port_
 
   **4.2** **TCP Personal Server Port Scan**
 
-    4.2.1 Description and Priority
+  4.2.1 Description and Priority
 
-    The program creates a _socket_ which sends a connection request to a _host&#39;s ports_ determined by the _IP address_ inputted by the user. If the _port_ is open and available for connections, it will respond to the request with an acknowledgement that is it open and ready to receive a connection. The scanner will return information on the _host&#39;s port_ status, as well as services, versions and operating systems being ran on that _port._
+  The program creates a _socket_ which sends a connection request to a _host&#39;s ports_ determined by the _IP address_ inputted by the user. If the _port_ is open and available for connections, it will respond to the request with an acknowledgement that is it open and ready to receive a connection. The scanner will return information on the _host&#39;s port_ status, as well as services, versions and operating systems being ran on that _port._
 
-    4.2.2 Stimulus/Response Sequences
+  4.2.2 Stimulus/Response Sequences
 
-    We will create an advanced settings option in which the user can input an _IP address_ for a device they own and run the scan against that. This will only require an extra text box below the regular button
+  We will create an advanced settings option in which the user can input an _IP address_ for a device they own and run the scan against that. This will only require an extra text box below the regular button
 
-    4.2.3 Functional Requirements
+  4.2.3 Functional Requirements
 
-      REQ-1:        Send _TCP requests_ to all _ports_
+    REQ-1:        Send _TCP requests_ to all _ports_
 
-      REQ-2:        Compile information on all _ports_ that don&#39;t respond with &quot;closed&quot;
+    REQ-2:        Compile information on all _ports_ that don&#39;t respond with &quot;closed&quot;
 
-      REQ-3:        Report findings to the user
+    REQ-3:        Report findings to the user
 
-      REQ-4:        Provide specific information as to the safety concerns of each open _port_
+    REQ-4:        Provide specific information as to the safety concerns of each open _port_
 
 **5.** **Other Nonfunctional Requirements**
 
