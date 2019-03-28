@@ -17,7 +17,7 @@
 | **Table of Contents**         |
 | --- |
 | **Revision History**          |
-| **1.**        **Introduction**         |
+| **1.**        [**Introduction**](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#1-introduction)         |
 | 1.1        Purpose      |
 | 1.2        Document Conventions      |
 | 1.3        Intended Audience and Reading Suggestions      |
