@@ -16,39 +16,38 @@
 
 | **Table of Contents**         |
 | --- |
-| **Revision History**          |
-| **1.**        [**Introduction**](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#1-introduction)         |
-| 1.1        Purpose      |
-| 1.2        Document Conventions      |
-| 1.3        Intended Audience and Reading Suggestions      |
-| 1.4        Product Scope      |
-| 1.5        References      |
-| **2.**        **Overall Description**          |
-| 2.1        Product Perspective      |
-| 2.2        Product Functions      |
-| 2.3        User Classes and Characteristics       |
-| 2.4        Operating Environment      |
-| 2.5        Design and Implementation Constraints      |
-| 2.6        User Documentation      |
-| 2.7        Assumptions and Dependencies      |
-| **3.**        **External Interface Requirements**       |
-| 3.1        User Interfaces      |
-| 3.2        Hardware Interfaces      |
-| 3.3        Software Interfaces      |
-| 3.4        Communications Interfaces      |
-| **4.**        **System Features**        |
-| 4.1        TCP Self Port Scan      |
-| 4.2        TCP Personal Server Port Scan    |
-| **5.**        **Other Nonfunctional Requirements**     |
-| 5.1        Performance Requirements      |
-| 5.2        Safety and Security Requirement      |
-| 5.3        Software Quality Attributes      |
-| **6.**        **Other Requirements**          |
-| **Appendix A: Glossary**          |
-| **Appendix B: Analysis Models**          |
-| **Appendix C: To Be Determined List**          |
+| [**Revision History**](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#revision-hitory)          |
+| [**1.**        **Introduction**](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#1-introduction)         |
+| [1.1        Purpose](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#11-purpose)      |
+| [1.2        Document Conventions](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#12-document-conventions)      |
+| [1.3        Intended Audience and Reading Suggestions](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#13-intended-audience-and-reading-suggestions)      |
+| [1.4        Product Scope](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#14-product-scope)      |
+| [1.5        References](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#15-references)      |
+| [**2.**        **Overall Description**](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#2-overall-description)          |
+| [2.1        Product Perspective](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#21-product-perspective)      |
+| [2.2        Product Functions](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#22-product-functions)      |
+| [2.3        User Classes and Characteristics](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#23-user-classes-and-characteristics)       |
+| [2.4        Operating Environment](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#24-operating-environment)      |
+| [2.5        Design and Implementation Constraints](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#25-design-and-implementation-constraints)      |
+| [2.6        User Documentation](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#26-user-documentation)      |
+| [2.7        Assumptions and Dependencies](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#27-assumptions-and-dependencies)      |
+| [**3.**        **External Interface Requirements**](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#3-external-interface-requirements)       |
+| [3.1        User Interfaces](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#31-user-interfaces)      |
+| [3.2        Hardware Interfaces](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#32-hardware-interfaces)      |
+| [3.3        Software Interfaces](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#33-software-interfaces)      |
+| [3.4        Communications Interfaces](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#34-communications-interfaces)      |
+| [**4.**        **System Features**](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#4-system-features)        |
+| [4.1        TCP Self Port Scan](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#41-tcp-self-port-scan)      |
+| [4.2        TCP Personal Server Port Scan](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#42-tcp-personal-server-port-scan)    |
+| [**5.**        **Other Nonfunctional Requirements**](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#5-other-nonfunctional-requirements)     |
+| [5.1        Performance Requirements](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#51-performance-requirements)      |
+| [5.2        Safety and Security Requirement](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#52-safety-and-security-requirements)      |
+| [5.3        Software Quality Attributes](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#53-software-quality-attributes)      |
+| [**Appendix A: Glossary**](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#appendix-a-glossary)          |
+| [**Appendix B: Analysis Models**](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#appendix-b-analysis-models-and-mockups)          |
+| [**Appendix C: To Be Determined List**](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#appendix-c-to-be-determined-list)          |
 
-**Revision History**
+# Revision History
 
 | **Name** | **Date** | **Reason For Changes** | **Version** |
 | --- | --- | --- | --- |
