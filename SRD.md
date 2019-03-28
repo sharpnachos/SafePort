@@ -16,7 +16,7 @@
 
 | **Table of Contents**         |
 | --- |
-| [**Revision History**](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#revision-hitory)          |
+| [**Revision History**](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#revision-history)          |
 | [**1.**        **Introduction**](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#1-introduction)         |
 | [1.1        Purpose](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#11-purpose)      |
 | [1.2        Document Conventions](https://github.com/sharpnachos/comp330sp19p3/blob/master/SRD.md#12-document-conventions)      |
