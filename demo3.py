@@ -10,9 +10,7 @@ lock = threading.Lock()
 target = '127.0.0.1'
 # This saves the start time to calculate the speed of tests later on
 start = time.time()
-# Creates a queue to be used for the complete scan
-q = JoinableQueue()
-# TODO: This creates a queue for the Smart Scan feature I want to implement
+# This creates a queue for the Smart Scan feature I want to implement
 sq = JoinableQueue()
 # This makes a list for which we are going to use to keep track of the open ports
 openPorts = []
@@ -25,22 +23,22 @@ def portscan(port):
         with lock:
             print('Port', port, 'is open!')
             print('Time taken:', round(((time.time() - start)/60), 2), ' minutes')
-            openPorts.add(port)
+            openPorts.append(port)
         connection.close()
     except:
         pass
     # Notifies the user that the scan is over
-    if port == 65536:
+    if port == 54870:
+        time.sleep(0.5)
         print('Done!')
-        for x in range(len(openPorts)):
-            print (openPorts[x])
+        print (*openPorts, sep = ", ")
     
 
 def thread():
     while True:
-        worker = q.get()
+        worker = sq.get()
         portscan(worker)
-        q.task_done()
+        sq.task_done()
 
 # This sets how many threads you want to run and starts them
 for x in range(100):
@@ -51,6 +49,6 @@ for x in range(100):
 smartList = [135, 445, 5040, 5354, 6463, 8733, 13148, 27275, 631, 4381, 4380, 50698, 50760, 5088, 51229, 57621, 902, 912, 5432, 7680, 8080, 15292, 15393, 27017, 27015, 49665, 49664, 49666, 49668, 49684, 49731, 49765, 49774, 54860, 54870]
 # This adds every single port to the Queue
 for worker in smartList:
-    q.put(worker)
+    sq.put(worker)
 
-q.join()
+sq.join()
