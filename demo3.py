@@ -1,7 +1,7 @@
 import socket
 import time
 import threading
-from queue import Queue
+from multiprocessing import JoinableQueue
 
 socket.setdefaulttimeout(0.25)
 lock = threading.Lock()
@@ -11,9 +11,9 @@ target = '127.0.0.1'
 # This saves the start time to calculate the speed of tests later on
 start = time.time()
 # Creates a queue to be used for the complete scan
-q = Queue()
+q = JoinableQueue()
 # TODO: This creates a queue for the Smart Scan feature I want to implement
-sq = Queue()
+sq = JoinableQueue()
 # This makes a list for which we are going to use to keep track of the open ports
 openPorts = []
 
