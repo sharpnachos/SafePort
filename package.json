@@ -1,0 +1,23 @@
+{
+  "name": "comp330sp19p3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharpnachos/comp330sp19p3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sharpnachos/comp330sp19p3/issues"
+  },
+  "homepage": "https://github.com/sharpnachos/comp330sp19p3#readme",
+  "devDependencies": {
+    "electron": "4.1.4"
+  }
+}
