@@ -7,13 +7,13 @@ let win
 
 function createWindow () {
   // Create the browser window.
-  win = new BrowserWindow({ width: 800, height: 600 })
+  win = new BrowserWindow({ width: 800, height: 600, titleBarStyle: 'hidden'})
 
   // and load the index.html of the app.
   win.loadFile('src/html/index.html')
 
   // Open the DevTools.
-  win.webContents.openDevTools()
+  //win.webContents.openDevTools()
 
   // Emitted when the window is closed.
   win.on('closed', () => {
@@ -23,29 +23,10 @@ function createWindow () {
     win = null
   })
 
-  // temporary toolbar menu!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  // temporary toolbar menu!
   var menu = Menu.buildFromTemplate([
       {
-        label: 'Menu',
-        submenu: [
-            {label: 'Adjust Notification Value'},
-            {
-                label: 'CoinMarketCap',
-                click() {
-                    shell.openExternal('http://coinmarketcap.com')  //this can be used for the user manual!
-                }
-            },
-            {type: 'separator'},
-            {
-                label: 'Exit',
-                click() {
-                    app.quit();
-                }
-            }
-        ]
-      },
-      {
-        label: 'Info'
+        label: ''
       }
 ])
 

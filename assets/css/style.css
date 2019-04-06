@@ -1,0 +1,89 @@
+/*
+Color Palette:
+#17252a dark grey
+#2b7a78 dark teal
+#3aafa9 teal
+#def2f1 light teal
+#feffff white
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0px;
+    background: #feffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #17252a;
+    font-size: 16px;
+  }
+  
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Overpass', sans-serif;
+}
+
+header {
+    background-color: #17252a;
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+    display: inline-block;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.nav-item {
+    border: none;
+    color: #fff;
+    padding: 15px 32px;
+    margin: -10px 1px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.nav-item:hover {
+    background-color: #2b7a78;
+}
+
+.nav-item-current {
+    background-color: #2b7a78;
+}
+
+.button {
+    background-color: #3aafa9;
+    border: none;
+    color: #fff;
+    padding: 15px 32px;
+    margin: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button:hover {
+    color: #def2f1;
+    background-color: #2b7a78;
+}
+
+.main {
+    margin-top: 10%;
+    text-align: center;
+}
+
+#logo {
+    height: 100px;
+    margin-bottom: 65px;
+}
+
+.big-text {
+    font-size: 36px;
+}
