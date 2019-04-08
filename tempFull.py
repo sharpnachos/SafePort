@@ -11,7 +11,7 @@ target = '127.0.0.1'
 # This saves the start time to calculate the speed of tests later on
 start = time.time()
 # This creates a queue for the Smart Scan feature I want to implement
-sq = JoinableQueue()
+userQ = JoinableQueue()
 # This makes a list for which we are going to use to keep track of the open ports
 openPorts = []
 
@@ -28,17 +28,17 @@ def portscan(port):
     except:
         pass
     # Notifies the user that the scan is over
-    if port == 54870:
+    if port == 65:
         time.sleep(0.5)
         print('Done!')
         print (*openPorts, sep = ", ")
-    
+
 
 def thread():
     while True:
-        worker = sq.get()
+        worker = userQ.get()
         portscan(worker)
-        sq.task_done()
+        userQ.task_done()
 
 # This sets how many threads you want to run and starts them
 for x in range(100):
@@ -47,7 +47,7 @@ for x in range(100):
     t.start()
 
 # This adds every single port to the Queue
-for worker in range(0, 655365):
-    sq.put(worker)
+for worker in range(0, 65535):
+    userQ.put(worker)
 
-sq.join()
+userQ.join()

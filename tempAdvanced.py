@@ -28,11 +28,11 @@ def portscan(port):
     except:
         pass
     # Notifies the user that the scan is over
-    if port == 54870:
+    if port == 65535:
         time.sleep(0.5)
         print('Done!')
         print (*openPorts, sep = ", ")
-    
+
 
 def thread():
     while True:
@@ -46,9 +46,7 @@ for x in range(100):
     t.daemon = True
     t.start()
 
-smartList = [135, 445, 5040, 5354, 6463, 8733, 13148, 27275, 631, 4381, 4380, 50698, 50760, 5088, 51229, 57621, 902, 912, 5432, 7680, 8080, 15292, 15393, 27017, 27015, 49665, 49664, 49666, 49668, 49684, 49731, 49765, 49774, 54860, 54870]
-# This adds every single port to the Queue
-for worker in smartList:
+for worker in range(0, 65535):
     sq.put(worker)
 
 sq.join()
