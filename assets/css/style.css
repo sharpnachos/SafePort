@@ -1,0 +1,166 @@
+/*
+Color Palette:
+#17252a dark grey
+#2b7a78 dark teal
+#3aafa9 teal
+#def2f1 light teal
+#feffff white
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0px;
+    background: #feffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #17252a;
+    font-size: 16px;
+  }
+  
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Overpass', sans-serif;
+}
+
+header {
+    background-color: #17252a;
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+    display: inline-block;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+main {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.nav-item {
+    border: none;
+    color: #fff;
+    padding: 15px 32px;
+    margin: -10px 1px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.nav-item:hover {
+    background-color: #2b7a78;
+}
+
+.nav-item-current {
+    background-color: #2b7a78;
+}
+
+.button {
+    background-color: #3aafa9;
+    border: none;
+    color: #fff;
+    padding: 15px 32px;
+    margin: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: #2b7a78;
+}
+
+
+/* HOME PAGE STYLES */
+.home {
+    margin-top: 12%;
+}
+
+#logo {
+    height: 100px;
+    margin-bottom: 65px;
+}
+
+.big-text {
+    font-size: 36px;
+}
+
+.big-text {
+    font-size: 24px;
+}
+
+
+/* SCAN PAGE STYLES */
+.scan-button-container {
+    margin-top: 50px;
+    display: inline-block;
+}
+
+.scan-button {
+    margin: 0 20px;
+    width: 125px;
+    height: 250px;
+}
+
+.scan1 {
+    background-color: #46C7C3;
+    clear: both;
+}
+
+.scan1:hover {
+    background-color: #3DADAA;
+}
+
+.scan2 {
+    background-color: #3AAAA9;
+    clear: both;
+}
+
+.scan2:hover {
+    background-color: #297877;
+}
+
+.scan3 {
+    background-color: #2b7a78;
+    clear: both;
+}
+
+.scan3:hover {
+    background-color: #194746;
+}
+
+.scan-text {
+    margin: 30px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* RESULTS PAGE STYLES */
+.results {
+    border: black solid 1px;
+    display: inline-block;
+    width: 550px;
+    height: 225px;
+    margin-bottom: 20px;
+}
+
+
+/* HELP PAGE STYLES */
+.port-button-container {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: inline-block;
+}
+
+.port-button {
+    margin: 0 20px;
+    width: 115px;
+}
