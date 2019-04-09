@@ -39,6 +39,11 @@ header::after {
     clear: both;
 }
 
+main {
+    text-align: center;
+    margin-top: 40px;
+}
+
 .nav-item {
     border: none;
     color: #fff;
@@ -70,13 +75,13 @@ header::after {
 }
 
 .button:hover {
-    color: #def2f1;
     background-color: #2b7a78;
 }
 
-.main {
-    margin-top: 10%;
-    text-align: center;
+
+/* HOME PAGE STYLES */
+.home {
+    margin-top: 12%;
 }
 
 #logo {
@@ -86,4 +91,48 @@ header::after {
 
 .big-text {
     font-size: 36px;
+}
+
+
+/* SCAN PAGE STYLES */
+.scan-button-container {
+    margin-top: 50px;
+    display: inline-block;
+}
+
+.scan-button {
+    margin: 0 20px;
+    width: 125px;
+    height: 250px;
+}
+
+.scan1 {
+    background-color: #46C7C3;
+    clear: both;
+}
+
+.scan1:hover {
+    background-color: #3DADAA;
+}
+
+.scan2 {
+    background-color: #3AAAA9;
+    clear: both;
+}
+
+.scan2:hover {
+    background-color: #297877;
+}
+
+.scan3 {
+    background-color: #2b7a78;
+    clear: both;
+}
+
+.scan3:hover {
+    background-color: #194746;
+}
+
+.scan-text {
+    margin: 30px 0;
 }
