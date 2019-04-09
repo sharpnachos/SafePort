@@ -1,7 +1,10 @@
+# THIS IS THE FILE FOR THE SMART SCAN
+# READY FOR INTEGRATION
 import socket
 import time
 import threading
 from multiprocessing import JoinableQueue
+import sys
 
 socket.setdefaulttimeout(0.25)
 lock = threading.Lock()
@@ -33,7 +36,7 @@ def portscan(port):
         print('Done!')
         print2 = ', '.join(str(x) for x in openPorts)
         print (print2)
-        exit()
+
 
 
 def thread():

@@ -1,3 +1,6 @@
+# This is the temporary file for the full scan that scans every single port
+# THIS IS NOT READY FOR INTEGRATION
+# (Should only take about 5 - 10 minutes to integrate though)
 import socket
 import time
 import threading

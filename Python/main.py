@@ -1,3 +1,5 @@
+# This class will take information on what scan the user wants to perform and then will make a scan according to those specifications and pass the variable to portScan which will carry out the scan
+# NOT READY FOR INTEGRATION
 def main():
     ip = '127.0.0.1'
     userQ = JoinableQueue()
@@ -38,10 +40,10 @@ class scanOption:
         self.userQ = userQ
         self.threads = threads
     
-    def getip(object):
+    def getip():
         return ip
     
-    def geruserQ(object):
+    def geruserQ():
         return userQ
     
     def getthreads():

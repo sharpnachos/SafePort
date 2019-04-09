@@ -1,3 +1,6 @@
+# This is the temporary file for a scan in which you can change the IP address user and the number of threads
+# NOT READY TO BE INTEGRATED
+# (Should only take 5-10 minutes to integrate though)
 import socket
 import time
 import threading
