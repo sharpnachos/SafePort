@@ -143,6 +143,16 @@ main {
 }
 
 
+/* RESULTS PAGE STYLES */
+.results {
+    border: black solid 1px;
+    display: inline-block;
+    width: 550px;
+    height: 225px;
+    margin-bottom: 20px;
+}
+
+
 /* HELP PAGE STYLES */
 .port-button-container {
     margin-top: 50px;
