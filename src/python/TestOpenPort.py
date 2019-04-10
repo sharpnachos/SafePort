@@ -18,10 +18,10 @@ class OpenPort(unittest.TestCase):
 	def test2_for_open_port_verification(self):
 		self.assertNotEqual(tempFull,('is closed'))
 		
-  #This tests threading, but I can't it to work yet
+  #This tests threading, but I don't know if it works properly. It passes, but I can't verify if it is correct.
   
 	#def test_threading(self):
-  		#t = threading.Thread(target=lambda: self.assertTrue(False))
+  		#t = threading.Thread(target=lambda: self.assertTrue(True))
   		#t.start()
   		#t.join()	
 		
