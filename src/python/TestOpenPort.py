@@ -21,9 +21,9 @@ class OpenPort(unittest.TestCase):
   #This tests threading, but I can't it to work yet
   
 	#def test_threading(self):
-  #t = threading.Thread(target=lambda: self.assertTrue(False))
-  #t.start()
-  #t.join()	
+  		#t = threading.Thread(target=lambda: self.assertTrue(False))
+  		#t.start()
+  		#t.join()	
 		
 if __name__ == '__main__':
 	unittest.main()
