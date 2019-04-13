@@ -31,8 +31,9 @@ def portscan(port):
     if port == 54870:
         time.sleep(0.5)
         print('Done!')
-        print2 = ', '.join(str(x) for x in openPorts)
-        print (print2)
+        results = ', '.join(str(x) for x in openPorts)
+        print (results)
+        return results
         exit()
 
 

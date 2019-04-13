@@ -13,7 +13,7 @@ function createWindow () {
   win.loadFile('src/html/index.html')
 
   // Open the DevTools.
-  //win.webContents.openDevTools()
+  win.webContents.openDevTools()
 
   // Emitted when the window is closed.
   win.on('closed', () => {
@@ -31,6 +31,15 @@ function createWindow () {
 ])
 
   Menu.setApplicationMenu(menu);
+
+
+  // INTEGRATION ----------------------------------------------------------------------------------------------------------------------------
+  var python = require('child_process').spawn('python', ['src/python/tempSmart.py']);
+
+  python.stdout.on('data',function(data){
+        console.log("data: ",data.toString('utf8'));
+  });
+  
 }
 
 // This method will be called when Electron has finished
