@@ -1,6 +1,9 @@
 const { app, BrowserWindow, Menu } = require('electron')
 const shell = require('electron').shell
 
+// scan results ------------------------------------------------------------------
+// var results = "hello";
+
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let win
@@ -33,13 +36,18 @@ function createWindow () {
   Menu.setApplicationMenu(menu);
 
 
-  // INTEGRATION ----------------------------------------------------------------------------------------------------------------------------
+  // INTEGRATION -----------------------------------------------------------------------------------------------------------------
+  /*
   var python = require('child_process').spawn('python', ['src/python/tempSmart.py']);
 
   python.stdout.on('data',function(data){
         console.log("data: ",data.toString('utf8'));
+
+        results = data.toString('utf-8');
+        console.log(results);
+        // document.getElementById("print-results").innerHTML = results;
   });
-  
+  */
 }
 
 // This method will be called when Electron has finished
