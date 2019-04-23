@@ -11,7 +11,7 @@ runFull.addEventListener('click', function() {
     // open load screen
     document.getElementById("load_screen").style.display = "block";
 
-    var python = require('child_process').spawn('python', ['src/python/tempFull.py']);
+    var python = require('child_process').spawn('python', ['src/python/full.py']);
 
     python.stdout.on('data', function(data){
 

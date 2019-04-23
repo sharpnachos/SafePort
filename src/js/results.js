@@ -1,4 +1,3 @@
-
 function showResults() {
     var fs = require('fs');
     var readData = fs.readFileSync('src/js/results.json');
