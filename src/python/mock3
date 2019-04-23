@@ -1,0 +1,26 @@
+#This is the mock that we are using to test the socket object
+
+import unittest
+import tempFull
+from tempFull import portscan
+from tempFull import thread
+from unittest.mock import patch
+
+#the patch decorator creats a mock class
+#It pulls the object from the other side and creates a mock object to test
+
+@patch('tempFull.thread')
+@patch('tempFull.portscan')
+
+class TestUM(unittest.TestCase):
+	
+	def test(self, MockClass1, MockClass2): #Create the mock test class, pass 3 positional arguments
+		tempFull.portscan()
+		tempFull.thread()
+		assert MockClass1 is tempFull.portscan
+		assert MockClass2 is tempFull.thread
+		self.assertTrue(MockClass1.called)
+		self.assertTrue(MockClass2.called)
+		
+if __name__ == '__main__':
+	unittest.main()
