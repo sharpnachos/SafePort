@@ -9,7 +9,7 @@ from unittest.mock import patch
 @patch('tempAdvanced.thread')
 @patch('tempAdvanced.portscan')
 
-class TestMock3(unittest.TestCase):
+class TestMock5(unittest.TestCase):
 	
 	def test(self, MockClass1, MockClass2): #Create the mock test class, pass 3 positional arguments
 		tempAdvanced.portscan()
