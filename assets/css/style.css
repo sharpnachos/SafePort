@@ -1,6 +1,6 @@
 /*
 Color Palette:
-#17252a dark grey
+#17252a dark blue
 #2b7a78 dark teal
 #3aafa9 teal
 #def2f1 light teal
@@ -106,8 +106,8 @@ main {
 
 .scan-button {
     margin: 0 20px;
-    width: 125px;
-    height: 250px;
+    width: 175px;
+    height: 260px;
 }
 
 .scan1 {
@@ -138,18 +138,22 @@ main {
 }
 
 .scan-text {
-    margin: 30px 0;
+    margin: -10px 0 30px 0;
     font-family: 'Roboto', sans-serif;
 }
 
 
 /* RESULTS PAGE STYLES */
 .results {
-    border: black solid 1px;
+    border: #17252a solid 2px;
     display: inline-block;
     width: 550px;
     height: 225px;
     margin-bottom: 20px;
+}
+
+#print-results {
+    margin: 10px 20px 0 20px;
 }
 
 
@@ -163,4 +167,34 @@ main {
 .port-button {
     margin: 0 20px;
     width: 115px;
+}
+
+/* scan loading spinner styles */
+div#load_screen {
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    z-index:10;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-content: center;
+    display: none;
+}
+
+div#loading {
+    color:#FFF;
+    opacity: 1;
+    margin: 300px auto;
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    height: 30%;
+    margin-top: 19%;
+    margin-bottom: 56%;
+}
+
+#spinner {
+    height: 80px;
+    width: 80px;
+    margin: 30px 0;
 }
