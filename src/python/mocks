@@ -9,7 +9,7 @@ from unittest.mock import patch
 @patch('portScan.thread')
 @patch('portScan.portscan')
 
-class TestMock3(unittest.TestCase):
+class TestMock6(unittest.TestCase):
 	
 	def test(self, MockClass1, MockClass2): #Create the mock test class, pass 3 positional arguments
 		portScan.portscan()
