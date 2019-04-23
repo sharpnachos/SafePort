@@ -21,8 +21,8 @@ def portscan(port):
     try:
         connection = s.connect((target, port))
         with lock:
-            print1 = 'Port', port, 'is open!'
-            print(print1)
+            # print1 = 'Port', port, 'is open!'
+            # print(print1)
             openPorts.append(port)
         connection.close()
     except:
@@ -30,9 +30,10 @@ def portscan(port):
     # Notifies the user that the scan is over
     if port == 54870:
         time.sleep(0.5)
-        print('Done!')
-        print2 = ', '.join(str(x) for x in openPorts)
-        print (print2)
+        # print('Done!')
+        results = ', '.join(str(x) for x in openPorts)
+        print ("Open ports on your device:  " + results)
+        return results
         exit()
 
 

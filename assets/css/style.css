@@ -1,6 +1,6 @@
 /*
 Color Palette:
-#17252a dark grey
+#17252a dark blue
 #2b7a78 dark teal
 #3aafa9 teal
 #def2f1 light teal
@@ -145,7 +145,7 @@ main {
 
 /* RESULTS PAGE STYLES */
 .results {
-    border: black solid 1px;
+    border: #17252a solid 2px;
     display: inline-block;
     width: 550px;
     height: 225px;
