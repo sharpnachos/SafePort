@@ -5,7 +5,7 @@ var results = JSON.parse(readData);
 
 console.log(results);
 
-var runButton = document.getElementById("run")
+var runButton = document.getElementById("runSmart")
 
 runButton.addEventListener('click', function() {
 
@@ -24,5 +24,6 @@ runButton.addEventListener('click', function() {
         });
     });
 
-    //document.location.href = "../html/results.html";
+    alert("test");
+    document.location.href = "../html/results.html";
 });

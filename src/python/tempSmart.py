@@ -31,8 +31,9 @@ def portscan(port):
     if port == 54870:
         time.sleep(0.5)
         # print('Done!')
+        message = 'Open ports on your device:  \n'
         results = ', '.join(str(x) for x in openPorts)
-        print ("Open ports on your device:  " + results)
+        print (message + results)
         return results
         exit()
 
