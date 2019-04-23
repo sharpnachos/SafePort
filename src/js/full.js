@@ -8,13 +8,14 @@ console.log(results);
 var runFull = document.getElementById("runFull")
 
 runFull.addEventListener('click', function() {
+    // open load screen
+    document.getElementById("load_screen").style.display = "block";
 
     var python = require('child_process').spawn('python', ['src/python/tempFull.py']);
 
     python.stdout.on('data', function(data){
 
         console.log("data: ",data.toString('utf8'));
-        //document.getElementById("print-results").innerHTML = data.toString('utf8');
 
         // store results in JSON
         results = data.toString('utf8');
@@ -24,10 +25,6 @@ runFull.addEventListener('click', function() {
                 throw err;
             else
                 document.location.href = "../html/results.html";
-            //console.log('The file has been saved!');
         });
     });
-
-    //alert("test");
-    //document.location.href = "../html/results.html";
 });
