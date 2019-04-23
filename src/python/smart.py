@@ -18,7 +18,7 @@ openPorts = []
 
 def portscan(port):
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    # This sends the connection request to each port in the queue
+    # This sends the connection request to each port in the queue 
     try:
         connection = s.connect((target, port))
         with lock:
