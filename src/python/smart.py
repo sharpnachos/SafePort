@@ -2,6 +2,7 @@ import socket
 import time
 import threading
 from multiprocessing import JoinableQueue
+import sys
 
 socket.setdefaulttimeout(0.25)
 lock = threading.Lock()
@@ -35,7 +36,6 @@ def portscan(port):
         results = ', '.join(str(x) for x in openPorts)
         print (message + results + '<br/><br/><br/><i class="fas fa-search fa-md"></i>&nbsp; Scan Type: <i>Smart Scan</i>')
         return results
-        exit()
 
 
 def thread():
