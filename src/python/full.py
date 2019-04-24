@@ -33,7 +33,7 @@ def portscan(port):
         # print('Done!')
         message = '<h4>Open ports on your device:</h4><br/>'
         results = ', '.join(str(x) for x in openPorts)
-        print (message + results + '<br/><br/><br><i class="fas fa-search fa-md"></i>&nbsp; Scan Type: <i>Full Scan</i>')
+        print (message + results + '<br/><br/><br><i class="fas fa-microscope fa-md"></i>&nbsp; Scan Type: <i>Full Scan</i>')
         return results
 
 
