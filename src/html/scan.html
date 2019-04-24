@@ -8,14 +8,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   </head>
   <body>
-    <!-- scan loading screen -->
-    <div id="load_screen">
-        <div id="loading">
-          <img src="../../assets/gif/spinner.gif" alt="spinner" id="spinner"/><br/>
-          <h3>Scanning&nbsp;. . .&nbsp;this will take a few moments.</h3>
-        </div>
-      </div>
-    <!-- normal document content -->
     <header>
         <div>
             <nav>
@@ -29,29 +21,16 @@
     <main>
         <h1>Choose your scan type.</h1>
         <div class="scan-button-container">
-            <button class="button scan-button scan1" id="runSmart">
+            <a href="#" class="button scan-button scan1">
               <h1 class="scan-text"><strong>SMART SCAN</strong></h1><i class="fas fa-search fa-4x"></i>
-            </button>
-            <button class="button scan-button scan2" id="runFull">
+            </a>
+            <a href="#" class="button scan-button scan2">
               <h1 class="scan-text"><strong>FULL SCAN</strong></h1><i class="fas fa-microscope fa-4x"></i>
-            </button>
-            <button class="button scan-button scan3" id="runCustom" onclick="customAlert()">
+            </a>
+            <a href="#" class="button scan-button scan3">
               <h1 class="scan-text"><strong>CUSTOM SCAN</strong></h1><i class="fas fa-cogs fa-4x"></i>
-            </button>
+            </a>
         </div>
     </main>
-<<<<<<< HEAD
-=======
-
-    <script>
-      function customAlert(){
-        alert("Custom Scan coming soon!");
-      }
-    </script>
-
-    <script src="../js/smart.js"></script>
-    <script src="../js/full.js"></script>
-    <script src="../js/custom.js"></script>
->>>>>>> 354823c6e112950795f66e391f19d0c6f9d87800
   </body>
 </html>

@@ -18,20 +18,20 @@ openPorts = []
 def portscan(port):
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     # This sends the connection request to each port in the queue
-    if port == 65535:
-        message = '<h4>Open ports on your device:</h4><br/>'
-        results = ', '.join(str(x) for x in openPorts)
-        print (message + results + '<br/><br/><br><i class="fas fa-microscope fa-md"></i>&nbsp; Scan Type: <i>Full Scan</i>')
-        return results
     try:
         connection = s.connect((target, port))
         with lock:
-            # print('Port', port, 'is open!')
-            # print('Time taken:', round(((time.time() - start)/60), 2), ' minutes')
+            print('Port', port, 'is open!')
+            print('Time taken:', round(((time.time() - start)/60), 2), ' minutes')
             openPorts.append(port)
         connection.close()
     except:
         pass
+    # Notifies the user that the scan is over
+    if port == 65535:
+        time.sleep(0.5)
+        print('Done!')
+        print (*openPorts, sep = ", ")
 
 
 def thread():

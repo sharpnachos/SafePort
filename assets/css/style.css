@@ -106,8 +106,8 @@ main {
 
 .scan-button {
     margin: 0 20px;
-    width: 175px;
-    height: 260px;
+    width: 125px;
+    height: 250px;
 }
 
 .scan1 {
@@ -138,7 +138,7 @@ main {
 }
 
 .scan-text {
-    margin: -10px 0 30px 0;
+    margin: 30px 0;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -152,10 +152,6 @@ main {
     margin-bottom: 20px;
 }
 
-#print-results {
-    margin: 10px 20px 0 20px;
-}
-
 
 /* HELP PAGE STYLES */
 .port-button-container {
@@ -167,34 +163,4 @@ main {
 .port-button {
     margin: 0 20px;
     width: 115px;
-}
-
-/* scan loading spinner styles */
-div#load_screen {
-    background-color: rgba(0,0,0,0.8);
-    position: fixed;
-    z-index:10;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    align-content: center;
-    display: none;
-}
-
-div#loading {
-    color:#FFF;
-    opacity: 1;
-    margin: 300px auto;
-    width: 30%;
-    margin-left: 35%;
-    margin-right: 35%;
-    height: 30%;
-    margin-top: 19%;
-    margin-bottom: 56%;
-}
-
-#spinner {
-    height: 80px;
-    width: 80px;
-    margin: 30px 0;
 }
