@@ -18,9 +18,10 @@
   },
   "homepage": "https://github.com/sharpnachos/comp330sp19p3#readme",
   "devDependencies": {
-    "electron": "4.1.4"
+    "electron": "^4.1.4"
   },
   "dependencies": {
-    "open": "^6.1.0"
+    "open": "^6.1.0",
+    "python-shell": "^1.0.7"
   }
 }
