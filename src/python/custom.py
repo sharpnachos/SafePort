@@ -21,7 +21,7 @@ def portscan(port):
     if port == 65535:
         message = '<h4>Open ports on your device:</h4><br/>'
         results = ', '.join(str(x) for x in openPorts)
-        print (message + results + '<br/><br/><br><i class="fas fa-microscope fa-md"></i>&nbsp; Scan Type: <i>Custom Scan</i>')
+        print (message + results + '<br/><br/><br><i class="fas fa-microscope fa-md"></i>&nbsp; Scan Type: <i>Full Scan</i>')
         return results
     try:
         connection = s.connect((target, port))
