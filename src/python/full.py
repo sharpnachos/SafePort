@@ -31,7 +31,10 @@ def portscan(port):
     if port == 65:
         time.sleep(0.5)
         # print('Done!')
-        print (*openPorts, sep = ", ")
+        message = '<h4>Open ports on your device:</h4><br/>'
+        results = ', '.join(str(x) for x in openPorts)
+        print (message + results + '<br/><br/><br><i class="fas fa-search fa-md"></i>&nbsp; Scan Type: <i>Full Scan</i>')
+        return results
 
 
 def thread():
