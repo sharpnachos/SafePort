@@ -101,7 +101,7 @@
 
   ## 2.4 Operating Environment
 
-  SafePort is created in _Python 3_ and can be installed and run on the user&#39;s computer.  Python 3 allows SafePort to be run from any operating system.
+  SafePort is created in _Python 3_ and can be installed and run on the user&#39;s computer.  Python 3 allows SafePort to be run from any operating system.  The GUI is built in Electron, a softwware that runs on Node.js, and the data from scanning is displayed on the front-end using JSON objects.
 
   ## 2.5 Design and Implementation Constraints
 
@@ -113,21 +113,21 @@
 
   ## 2.7 Assumptions and Dependencies
 
-  The main assumption made with this project is that _Python_ has a robust enough _GUI_ implementation to create a good enough looking design for the interface of our product.  If this is not the case, then our team will have to look into third-party components to meet expectations for the graphic design.
+  For this product, we must assume that the user has at least the technical know-how to install an application, open it, and traverse the interface without any trouble.
 
 # 3. External Interface Requirements
 
   ## 3.1 User Interfaces
 
-  The SafePort application opens up to a home screen prompting the user to scan their network by clicking a button.  Once they click this, they are then led to the &#39;Scan&#39; page with the results of their scan.  All page links are held by a navigation bar at the top of the application.  The &#39;Scan&#39; page will continue to hold the results of the most recent scan.  Once the results of the scan are displayed, the user is prompted to fix any issues that the scan has found.  The &#39;Tools&#39; page also has options for the user to scan or fix their network.  The &#39;Profile&#39; page contains network information and logs from previous scans and fixes.  Finally, the &#39;Help&#39; page contains a short tutorial for the user if they have any troubles navigating the program and an additional link to the user manual for further inquiries.  For visualization of these features, please see mockups displayed in Appendix B.
+  The SafePort application opens up to a home screen prompting the user to scan their network by clicking a button.  This button will run the Smart Scan.  There is also a &#39;Scan&#39; page with options for a Smart Scan, Full Scan, or Custom Scan.  Smart Scan only analyses commonly exploited ports, Full Scan analyzes every port on the user's computer, and Custom Scan is able to scan IP addresses other than localhost.  Once a scan is selected and run, the user is led to the &#39;Results&#39; page which displays the open ports that were found and the type of scan that was run.  Also on the &#39;Results&#39; page is a prompt for the user to fix their open ports.  This will finally lead them to the &#39;Help&#39; page which contains a short tutorial for the user to close their ports for Windows, Mac, and Linux OS.  A user manual is also provided for if the user needs any additional help.  For visualization of these features, please see mockups displayed in Appendix B.
 
   ## 3.2 Hardware Interfaces
 
-  Through the use of Python 3, SafePort is able to run on any operating system.
+  Through the use of Python 3 and Electron, SafePort is able to run on any operating system.
 
   ## 3.3 Software Interfaces
 
-  As stated previously, SafePort is able to run on any operating system. All that is required is the latest version of _Python 3_ and its libraries.
+  As stated previously, SafePort is able to run on any operating system.
 
   ## 3.4 Communications Interfaces
 
@@ -156,11 +156,11 @@
 
   ### 4.2.1 Description and Priority
 
-  The program creates a _socket_ which sends a connection request to a _host&#39;s ports_ determined by the _IP address_ inputted by the user. If the _port_ is open and available for connections, it responds to the request with an acknowledgement that is it open and ready to receive a connection. The scanner then returns information on the _host&#39;s port_ status, as well as services, versions and operating systems being ran on that _port._
+  The program creates a _socket_ which sends a connection request to a _host&#39;s ports_ determined by the _IP address_ inputted by the user. If the _port_ is open and available for connections, it responds to the request with an acknowledgement that is it open and ready to receive a connection. The scanner then returns information on the _host&#39;s port_ status, as well as services, versions and operating systems being run on that _port._
 
   ### 4.2.2 Stimulus/Response Sequences
 
-  SafePort has an advanced settings option in which the user can input an _IP address_ for a device they own and run the scan against that. This requires only an extra text box below the regular scan button.
+  SafePort has a Custom Scan option in which the user can input an _IP address_ for a device they own and run the scan against that. This requires only an extra text box below the regular scan button.
 
   ### 4.2.3 Functional Requirements
 
@@ -173,7 +173,7 @@
 
   ## 5.1 Performance Requirements
 
-  Scans need to take less than a minute to execute and preferably less than 30 seconds.
+  Scans should take less than a minute to execute and preferably less than 30 seconds.
 
   ## 5.2 Safety and Security Requirements
 

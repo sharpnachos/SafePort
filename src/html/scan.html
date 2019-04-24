@@ -35,11 +35,17 @@
             <button class="button scan-button scan2" id="runFull">
               <h1 class="scan-text"><strong>FULL SCAN</strong></h1><i class="fas fa-microscope fa-4x"></i>
             </button>
-            <button class="button scan-button scan3" id="runCustom">
+            <button class="button scan-button scan3" id="runCustom" onclick="customAlert()">
               <h1 class="scan-text"><strong>CUSTOM SCAN</strong></h1><i class="fas fa-cogs fa-4x"></i>
             </button>
         </div>
     </main>
+
+    <script>
+      function customAlert(){
+        alert("Custom Scan coming soon!");
+      }
+    </script>
 
     <script src="../js/smart.js"></script>
     <script src="../js/full.js"></script>
