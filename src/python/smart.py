@@ -32,17 +32,23 @@ def portscan(port):
     if port == 54870:
         time.sleep(0.5)
         # print('Done!')
+<<<<<<< HEAD:src/python/smart.py
 <<<<<<< HEAD:src/python/tempSmart.py
         results = ', '.join(str(x) for x in openPorts)
         print ("Open ports on your device:  " + results)
         return results
         exit()
 =======
+=======
+>>>>>>> c9a8258c2351cb4687ff72be9d9066090b6210d8:src/python/smart.py
         message = '<h4>Open ports on your device:</h4><br/>'
         results = ', '.join(str(x) for x in openPorts)
         print (message + results + '<br/><br/><br/><i class="fas fa-search fa-md"></i>&nbsp; Scan Type: <i>Smart Scan</i>')
         return results
+<<<<<<< HEAD:src/python/smart.py
 >>>>>>> 354823c6e112950795f66e391f19d0c6f9d87800:src/python/smart.py
+=======
+>>>>>>> c9a8258c2351cb4687ff72be9d9066090b6210d8:src/python/smart.py
 
 
 def thread():

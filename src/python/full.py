@@ -18,7 +18,7 @@ openPorts = []
 def portscan(port):
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     # This sends the connection request to each port in the queue
-    if port == 65535:
+    if port == 65500:
             message = '<h4>Open ports on your device:</h4><br/>'
             results = ', '.join(str(x) for x in openPorts)
             print (message + results + '<br/><br/><br><i class="fas fa-microscope fa-md"></i>&nbsp; Scan Type: <i>Full Scan</i>')
