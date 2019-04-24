@@ -1,8 +1,8 @@
 #TestOpenPort
 
 import unittest
-import tempFull
-import threading
+import full 
+#import threading
 
 
 class OpenPort(unittest.TestCase):
@@ -13,10 +13,10 @@ class OpenPort(unittest.TestCase):
 	def test_for_open_port_verification(self):
 		
 		#Make sure that if the port is open, it returns the correct value
-		self.assertTrue(tempFull,('is open!'))
+		self.assertTrue(full ,('is open!'))
 		
 	def test2_for_open_port_verification(self):
-		self.assertNotEqual(tempFull,('is closed'))
+		self.assertNotEqual(full ,('is closed'))
 		
   #This tests threading, but I don't know if it works properly. It passes, but I can't verify if it is correct.
   
