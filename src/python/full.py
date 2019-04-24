@@ -28,7 +28,7 @@ def portscan(port):
     except:
         pass
     # Notifies the user that the scan is over
-    if port == 65:
+    if port == 65535:
         time.sleep(0.5)
         # print('Done!')
         message = '<h4>Open ports on your device:</h4><br/>'
